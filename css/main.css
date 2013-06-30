@@ -100,6 +100,7 @@ body {
 
 h1, h2, h3 {
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", "Arial Rounded", Arial, sans-serif;
+    margin: 0.5em 0;
 }
 
 /*
@@ -107,15 +108,99 @@ h1, h2, h3 {
  */
 
 .ingredients {
-    background: #f99;
+    background: #fff;
     position: fixed;
+    padding: 0 2%;
     height: 100%;
-    width: 30%;
+    width: 32%;
 }
 
+.ingredients h2 {
+    color: #80378d;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients li {
+    background: transparent url(../img/ingredients_icons.png) 0 0 no-repeat;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", "Arial Rounded", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+    opacity: 0.3;
+    padding-left: 40px;
+    -moz-transition:all .8s;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+.ingredients .listener {
+    background-position: 0 -159px;
+}
+
+.ingredients .phone {
+    background-position: 0 -96px;
+}
+
+.ingredients .creativity {
+    background-position: 0 -129px;
+}
+
+.ingredients .writing {
+    background-position: 0 -256px;
+}
+
+.ingredients .communication {
+    background-position: 0 -223px;
+}
+
+.ingredients .passion {
+    background-position: 0 -544px;
+}
+
+.ingredients .champion {
+    background-position: 0 -32px;
+}
+
+.ingredients .organised {
+    background-position: 0 -512px;
+}
+
+.ingredients .pressure {
+    background-position: 0 -384px;
+}
+
+.ingredients .customer-service {
+    background-position: 0 -320px;
+}
+
+.ingredients .social-media {
+    background-position: 0 -448px;
+}
+
+.ingredients .it {
+    background-position: 0 -1px;
+}
+
+.ingredients .humour {
+    background-position: 0 -64px;
+}
+
+ .ingredients .negotiator {
+    background-position: 0 -416px;
+}
+
+.ingredients .initiative {
+    background-position: 0 -288px;
+}
+
+
 .ingredients li.active {
-    text-decoration: underline;
     margin-left: 10px;
+    opacity: 1;
 }
 
 /*
@@ -123,17 +208,64 @@ h1, h2, h3 {
  */
 
 .smoothies {
-    background: #9f9;
-    margin-left: 30%;
-    width: 70%;
+    background: #fff;
+    margin-left: 36%;
+    width: 64%;
 }
 
 .smoothie {
-    border-bottom: 2px solid black;
+    background-image: url(../img/hr.png);
+    background-position: 0 bottom;
+    background-repeat:no-repeat;
+    padding: 0 20px;
+}
+
+.smoothie.intro h1 {
+    color: #b20932;
+}
+
+.smoothie:nth-child(2) h2 {
+    color: #5f88c6;
+}
+
+.smoothie:nth-child(3) h2 {
+    color: #ed6c05;
+}
+
+.smoothie:nth-child(4) h2 {
+    color: #e57db1;
+}
+
+.smoothie:nth-child(5) h2 {
+    color: #7ac142;
+}
+
+.smoothie:nth-child(6) h2 {
+    color: #b20932;
+}
+
+.smoothie:nth-child(7) h2 {
+    color: #5f88c6;
+}
+
+.smoothie:nth-child(8) h2 {
+    color: #ed6c05;
+}
+
+.smoothie * {
+    opacity: 0.4;
+    -moz-transition:all .8s;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
 }
 
 .smoothie.active {
-    background: #6f6;
+    
+}
+
+.smoothie.active * {
+    opacity: 1;
 }
 
 
