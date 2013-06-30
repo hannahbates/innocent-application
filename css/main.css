@@ -93,6 +93,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", "Arial Rounded", Arial, sans-serif;
+}
+
 /*
  * Ingredients section
  */
@@ -102,6 +111,11 @@ textarea {
     position: fixed;
     height: 100%;
     width: 30%;
+}
+
+.ingredients li.active {
+    text-decoration: underline;
+    margin-left: 10px;
 }
 
 /*
@@ -114,15 +128,12 @@ textarea {
     width: 70%;
 }
 
-.smoothies div {
-    position: relative;
-    width: 100%;
+.smoothie {
+    border-bottom: 2px solid black;
 }
 
-.smoothies div p {
-    margin: 0;
-    position: absolute;
-    top: 50%;
+.smoothie.active {
+    background: #6f6;
 }
 
 
