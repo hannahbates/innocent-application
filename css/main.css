@@ -122,10 +122,24 @@ span[title] {
 
 .ingredients {
     background: #fff;
-    position: relative;
-    padding: 0 2%;
+    max-width: 300px;
+    position: fixed;
+    padding-left: 15px;
     height: 100%;
-    width: 32%;
+    width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+    .ingredients {
+        width: 41px;
+        padding-left: 4px;
+    }
+    .ingredients li {
+        text-indent: -400px;
+    }
+    .ingredients h2 {
+        display: none;
+    }
 }
 
 .ingredients h2 {
@@ -220,10 +234,30 @@ span[title] {
  * Smoothie section
  */
 
+.smoothies, .smoothies-spacer {
+    float: left;
+}
+
+.smoothies-spacer {
+    height: 1px;
+    padding-left: 15px;
+    max-width: 300px;
+    width: 30%;
+}
+
 .smoothies {
     background: #fff;
-    /*margin-left: 36%;*/
-    width: 64%;
+    width: 66%;
+}
+
+@media screen and (max-width: 600px) {
+    .smoothies-spacer {
+        display: none;
+    }
+    .smoothies {
+        margin-left: 45px;
+        width: auto;
+    }
 }
 
 .smoothie {
@@ -284,7 +318,7 @@ span[title] {
 }
 
 .content {
-    /*margin-top: 20%;*/
+    margin-top: 50px;
 }
 
 /* ==========================================================================
