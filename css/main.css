@@ -268,8 +268,10 @@ span[title] {
     padding: 0 20px;
 }
 
-.smoothie:first-child {
+.smoothie:first-child,
+.smoothie:first-child .content {
     background: none;
+    margin-top: 0;
 }
 
 .smoothie.intro h1 {
