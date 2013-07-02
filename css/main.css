@@ -134,6 +134,9 @@ span[title] {
         width: 41px;
         padding-left: 4px;
     }
+    .ingredients ul {
+        margin: 0;
+    }
     .ingredients li {
         text-indent: -400px;
     }
