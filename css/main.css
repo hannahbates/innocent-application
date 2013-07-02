@@ -103,13 +103,26 @@ h1, h2, h3 {
     margin: 0.5em 0;
 }
 
+span[title] {
+    border-bottom: 1px dotted;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.ingredients, .smoothies {
+    float: left;
+}
+
 /*
  * Ingredients section
  */
 
 .ingredients {
     background: #fff;
-    position: fixed;
+    position: relative;
     padding: 0 2%;
     height: 100%;
     width: 32%;
@@ -209,15 +222,17 @@ h1, h2, h3 {
 
 .smoothies {
     background: #fff;
-    margin-left: 36%;
+    /*margin-left: 36%;*/
     width: 64%;
 }
 
 .smoothie {
-    background-image: url(../img/hr.png);
-    background-position: 0 bottom;
-    background-repeat:no-repeat;
+    background: url(../img/hr.png) 0 top no-repeat;
     padding: 0 20px;
+}
+
+.smoothie:first-child {
+    background: none;
 }
 
 .smoothie.intro h1 {
@@ -269,7 +284,7 @@ h1, h2, h3 {
 }
 
 .content {
-    margin-top: 20%;
+    /*margin-top: 20%;*/
 }
 
 /* ==========================================================================

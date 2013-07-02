@@ -14,9 +14,9 @@
     /*global $, jQuery*/
 
     /* Vars */
-    var smoothieHeight = $(window).height(),
-        smoothiesData = [],
+    var smoothiesData = [],
         activeSmoothie = 0,
+        $window = $(window),
     /* DOM elements */
         INGREDIENTS_SELECTOR = '.ingredients',
         SMOOTHIE_SELECTOR = '.smoothie';
@@ -33,7 +33,8 @@
     }
 
     function setSmoothieHeights() {
-        $(SMOOTHIE_SELECTOR).css('height', smoothieHeight);
+        var smoothieHeight = $window.height();
+        $(SMOOTHIE_SELECTOR).css('min-height', smoothieHeight);
     }
 
     function setSmoothiesData() {
@@ -59,7 +60,14 @@
 
         // Document listeners.
         $(window).scroll(function () {
-            var i = 0, scrollPosition = $(window).scrollTop();
+            var i = 0,
+                scrollPosition = $window.scrollTop(),
+                windowBottom = $window.height(),
+                $ingredients = $('.ingredients');
+
+            //if (windowBottom + scrollPosition >= $ingredients.height()) {
+            $ingredients.css('top', scrollPosition);
+            //}
 
             for (i; i < smoothiesData.length; i += 1) {
                 if (scrollPosition > smoothiesData[i].threshold.top
