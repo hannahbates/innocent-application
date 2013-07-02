@@ -60,14 +60,7 @@
 
         // Document listeners.
         $(window).scroll(function () {
-            var i = 0,
-                scrollPosition = $window.scrollTop(),
-                windowBottom = $window.height(),
-                $ingredients = $('.ingredients');
-
-            //if (windowBottom + scrollPosition >= $ingredients.height()) {
-            $ingredients.css('top', scrollPosition);
-            //}
+            var i = 0, scrollPosition = $window.scrollTop();
 
             for (i; i < smoothiesData.length; i += 1) {
                 if (scrollPosition > smoothiesData[i].threshold.top
