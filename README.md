@@ -1,8 +1,3 @@
 # Hannah's Innocent Application
 
-Site for Hannah, like,
-
-
-## Work it
-
-Scroll and that.
+Site for Hannah's application answers to Innocent.

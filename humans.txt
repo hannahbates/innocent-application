@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Dan Edwards -- Dev / Design -- igneosaur.co.uk
 
 # THANKS
 
-    <name>
+    Innocent, from which the visual designs were inspired
 
 # TECHNOLOGY COLOPHON
 

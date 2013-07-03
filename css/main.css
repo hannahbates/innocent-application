@@ -268,8 +268,8 @@ span[title] {
     padding: 0 20px;
 }
 
-.smoothie:first-child,
-.smoothie:first-child .content {
+.smoothie.intro,
+.smoothie.intro .content {
     background: none;
     margin-top: 0;
 }
@@ -278,31 +278,31 @@ span[title] {
     color: #b20932;
 }
 
-.smoothie:nth-child(2) h2 {
+.smoothie.initiative h2 {
     color: #5f88c6;
 }
 
-.smoothie:nth-child(3) h2 {
+.smoothie.why h2 {
     color: #ed6c05;
 }
 
-.smoothie:nth-child(4) h2 {
+.smoothie.amount h2 {
     color: #e57db1;
 }
 
-.smoothie:nth-child(5) h2 {
+.smoothie.doghnuts h2 {
     color: #7ac142;
 }
 
-.smoothie:nth-child(6) h2 {
+.smoothie.smiling h2 {
     color: #b20932;
 }
 
-.smoothie:nth-child(7) h2 {
+.smoothie.heard h2 {
     color: #5f88c6;
 }
 
-.smoothie:nth-child(8) h2 {
+.smoothie.website h2 {
     color: #ed6c05;
 }
 
