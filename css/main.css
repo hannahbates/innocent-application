@@ -268,14 +268,19 @@ span[title] {
     padding: 0 20px;
 }
 
-.smoothie.intro,
-.smoothie.intro .content {
+.intro,
+.intro .content {
     background: none;
     margin-top: 0;
 }
 
-.smoothie.intro h1 {
+.intro h1 {
     color: #b20932;
+}
+
+.note {
+    color: #bdbdbd;
+    font-style: italic;
 }
 
 .smoothie.initiative h2 {
