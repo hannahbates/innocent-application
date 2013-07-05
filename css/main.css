@@ -124,6 +124,7 @@ span[title] {
     background: #fff;
     max-width: 300px;
     position: fixed;
+    left: 0;
     padding-left: 15px;
     height: 100%;
     width: 30%;
@@ -160,6 +161,8 @@ span[title] {
     font-size: 15px;
     line-height: 32px;
     opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
     padding-left: 40px;
     -moz-transition:all .8s;
     -webkit-transition: all .8s;
@@ -231,6 +234,8 @@ span[title] {
 .ingredients li.active {
     margin-left: 10px;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
 }
 
 /*
@@ -313,6 +318,8 @@ span[title] {
 
 .smoothie * {
     opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
     -moz-transition:all .8s;
     -webkit-transition: all .8s;
     -o-transition: all .8s;
@@ -325,6 +332,8 @@ span[title] {
 
 .smoothie.active * {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
 }
 
 .content {
